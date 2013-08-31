@@ -5,18 +5,18 @@ var config = {
 		userName: 'esriBot',
 		realName: 'ESRI STL office node bot',
 		port: 6667,
-		debug: true,
-		showErrors: true,
+		debug: false,
+		showErrors: false,
 		autoRejoin: true,
 		autoConnect: true,
-		channels: ['#botzoo']
+		channels: ['#esri']
 	}
 };
 
 // Get the lib
 var irc = require("irc");
 
-// Create the bot name
+// Create the bot
 var bot = new irc.Client(config.server, config.nick, config.options);
 
 // Listen for joins

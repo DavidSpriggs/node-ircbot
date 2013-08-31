@@ -1,6 +1,6 @@
 node-ircbot
 ===========
 
-node irc bot used in #esri on freenode
+Node irc bot used in the #esri channel on freenode.
 
 Welcomes and tracks karma.

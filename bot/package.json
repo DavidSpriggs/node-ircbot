@@ -1,11 +1,16 @@
 {
-  "name": "ircbot",
+  "name": "node_ircbot",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node bot.js"
+    "start": "node bot.js",
+    "postinstall": "winser -i -s -c",
+    "preuninstall": "winser -r -x -s",
+    "install-windows-service": "winser -i",
+    "uninstall-windows-service": "winser -r"
   },
   "dependencies": {
-    "irc": "~0.3.6"
+    "irc": "*",
+    "winser": "*"
   }
 }
