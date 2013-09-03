@@ -48,6 +48,7 @@ bot.addListener('message', function(nick, chan, text, message) {
 			} else {
 				karma[p] = 1;
 			}
+			bot.say(chan, p + ' has ' + karma[p] + ' karma');
 		}
 		if (minusOne.test(text)) {
 			p = text.match(minusOne)[1];
@@ -56,8 +57,8 @@ bot.addListener('message', function(nick, chan, text, message) {
 			} else {
 				karma[p] = -1;
 			}
+			bot.say(chan, p + ' has ' + karma[p] + ' karma');
 		}
-		bot.say(chan, p + ' has ' + karma[p] + ' karma');
 	}
 });
 
